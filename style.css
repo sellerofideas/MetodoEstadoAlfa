@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@200;300;400;500 & family= Lato:ital,wght@0,100;0,300;0,400;0,700; 0,900;1,100;1,300;1,400;1,700;1,900 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'inter', sans-serif;
+}
+
+:root {
+    --black-collor :#000000;
+    --blue-collor : #0B00F0;
+    --yellow-collor : #FFF951;
+    --white-collor : #FFFFFF;
+    --orange-collor : #F58218;
+
+    
+    --black-shadow :#0000005d;
+    --blue-shadow : #0B00F05d;
+    --yellow-shadow : #FFF9515d;
+    --white-shadow : #FFFFFF5d;
+    --orange-shadow : #F582185d;
+
+    --hover-collor : #f5831867;
+    --primary-collor : #e7f1ec;
+    --shadow-collor: #e7f1ec52;
+}
+
+
+body{
+    background-color: var(--black-collor);
+    color: white;
+}
+
+/* Header */
+
+#header{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    height: 80vh;
+    background: #000000c7  url('imagens/com\ fundo.jpg') center center no-repeat fixed;
+    background-size: cover;
+    justify-content: center;
+    align-items: end;
+    display: flex;
+}
+
+#header h1, p{
+    padding: 0.2rem;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'inter', sans-serif;
+}
+
+#headline {
+    width: 477px;
+}
+
+.asset{
+    border-radius: 10px;
+    padding: 30px 0;
+    text-align: center;
+    width: 487px;
+    margin: 30px 0 30px 0;
+}
+
+.asset iframe {
+    padding: 5px;
+    width: 250px;
+    opacity: 0.6;
+}
+
+.asset iframe:hover{
+    opacity: 1;
+}
+
+.asset h1 {
+    color: var(--yellow-collor);
+}
+
+.asset p {
+    color: var(--white-collor);
+    padding: 15px;
+}
+
+/* Nav */
+nav {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    padding: 5px;
+}
+
+
+#logo img{
+    width: 40px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+}
+
+.nav-bar >ul {
+    display: none;
+}
+
+/** Section About **/
+#about {
+    max-width: 600px;
+    margin: 50px auto;
+   display: flex;
+}
+
+#about div{
+    padding: 30px;
+}
+
+#about h2, p {
+    padding: 15px 0;
+}
+
+#about h2{
+    color: var(--yellow-collor);
+}
+
+#cta {
+    display: flex;
+    margin: -91px 0 30px 0;
+}
+
+.cta {
+    margin: auto;
+    text-align: center;
+}
+
+footer{
+    background-color: var(--blue-shadow);
+}
+footer p {
+    justify-content: center;
+    display: flex;
+}
+
+
+/* Efects */
+
+.container {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: var(--yellow-collor);
+    font-size: large;
+    color: var(--preto-collor);
+
+}
+
+.btn:hover{
+    background-color: var(--orange-collor);
+    color: var(--white-collor);
+}
+
+.btn-outline{
+    border: 1px solid var(--yellow-collor);
+    padding: 7px;
+    margin: 5px;
+    color: var(--yellow-collor);
+    background-color: var(--orange-shadow);
+    text-transform: uppercase;
+}
+
+.btn-outline:hover {
+    border-color: var(--orange-collor);
+    color: var(--orange-collor);
+}
+
+.glass {
+    background: var(--preto-shadow);
+    border: 1px solid rgba(152, 153, 153, 0.5);
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 10px 1px  var(--yellow-shadow);
+}
+
