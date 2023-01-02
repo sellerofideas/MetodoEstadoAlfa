@@ -38,36 +38,30 @@ body{
     width: 100%;
     max-width: 1000px;
     margin: auto;
-    height: 80vh;
+    height: 90vh;
     background: #000000c7  url('imagens/com\ fundo.jpg') center center no-repeat fixed;
     background-size: cover;
-    justify-content: center;
-    align-items: end;
     display: flex;
-}
-
-#header h1, p{
-    padding: 0.2rem;
     justify-content: center;
-    font-weight: bold;
-    font-family: 'inter', sans-serif;
-}
-
-#headline {
-    width: 477px;
+    align-items: center;
 }
 
 .asset{
     border-radius: 10px;
     padding: 30px 0;
     text-align: center;
-    width: 487px;
-    margin: 30px 0 30px 0;
+    margin: 80px 0 15px 0;
+}
+
+.asset h1, .asset p{
+    padding:0 0.2rem;
+    font-weight: bold;
 }
 
 .asset iframe {
     padding: 5px;
-    width: 250px;
+    width: 200px;
+    height: 130px;
     opacity: 0.6;
 }
 
@@ -77,6 +71,7 @@ body{
 
 .asset h1 {
     color: var(--yellow-collor);
+    margin: auto;
 }
 
 .asset p {
@@ -88,20 +83,13 @@ body{
 nav {
     position: absolute;
     top: 0;
-    width: 100vw;
-    padding: 5px;
+    padding: 5px 0;
+    height: 40px;
 }
 
 
 #logo img{
     width: 40px;
-}
-
-.nav-bar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 40px;
 }
 
 .nav-bar >ul {
@@ -111,15 +99,14 @@ nav {
 /** Section About **/
 #about {
     max-width: 600px;
-    margin: 50px auto;
-   display: flex;
+   margin: auto;
 }
 
 #about div{
     padding: 30px;
 }
 
-#about h2, p {
+#about h2, #about p {
     padding: 15px 0;
 }
 
@@ -129,20 +116,27 @@ nav {
 
 #cta {
     display: flex;
-    margin: -91px 0 30px 0;
+    margin-bottom:30px;
+    text-align: center;
+    justify-content: center;
 }
 
-.cta {
-    margin: auto;
-    text-align: center;
+.cta-btn p {
+    margin: 30px;
+}
+
+.cta-btn a{
+    margin-bottom: 30px;
 }
 
 footer{
     background-color: var(--blue-shadow);
 }
 footer p {
-    justify-content: center;
     display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
 }
 
 
@@ -153,7 +147,6 @@ footer p {
     justify-content: space-around;
     align-items: center;
     display: flex;
-    margin: auto;
 }
 
 .btn {
@@ -191,3 +184,9 @@ footer p {
     box-shadow: 0 0 10px 1px  var(--yellow-shadow);
 }
 
+
+@media (min-width: 440px) {
+    .asset h1, .asset p {
+        width: 410px;
+    }
+}
